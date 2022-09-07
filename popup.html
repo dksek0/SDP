@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report and Guide</title>
+  <style>
+    /* reset */
+    body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, p, span, button, iframe, th, td {margin: 0;padding: 0;box-sizing: border-box; } 
+    article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {display: block;margin: 0;padding: 0;box-sizing: border-box; } 
+    h1, h2, h3, h4, h5, h6, dt {font-weight: normal; } 
+    img, fieldset, iframe, button {border: 0 none; } 
+    li {list-style: none; } 
+    i, em, u, cite {font-style: normal; } 
+    strong {font-weight: normal; } 
+    a {color: #000;text-decoration: none;outline-offset: -1px;box-sizing: border-box; } 
+    html {overflow-y: scroll; } 
+    html, body {height: 100%;font-size: 14px;font-family: SamsungOne,"Apple SD Gothic Neo","Apple SD 고딕 Neo",AppleGothic,arial,sans-serif;line-height: 1.43;color: #000; } 
+    body {word-break: keep-all;word-wrap: break-word; } 
+    body.non-scroll {overflow-y: hidden; } 
+    /* Form */
+    legend {position: absolute;top: 0;left: 0;width: 0;height: 0;overflow: hidden;visibility: hidden;font-size: 0;line-height: 0; } 
+    select, input, textarea {outline: 0;border: 0 none;padding: 0;box-sizing: border-box; } 
+    select, input, label {vertical-align: middle; } 
+    button {border: 0 none;cursor: pointer;background: none; } 
+    button:disabled { opacity: 0.4; cursor: default; } 
+    textarea:disabled { opacity: 0.4; cursor: default;background-color: inherit; } 
+    select::-ms-expand {display: none; } 
+    select::-moz-focus-inner {border: 0;padding: 0; } 
+    select:-moz-focusring {color: transparent;text-shadow: 0 0 0 #000; } 
+    table {border-spacing: 0;border-collapse: separate;table-layout: fixed;width: 100%; } 
+    textarea {resize: none;font-family: SamsungOne,"Apple SD Gothic Neo","Apple SD 고딕 Neo",AppleGothic,arial,sans-serif; } 
+    ::placeholder {color: #9e9e9e; } 
+    :-ms-input-placeholder {color: #9e9e9e !important; } 
+    ::-webkit-input-placeholder {color: #9e9e9e !important; } 
+    input[type='file'] {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin: 0;padding: 0;border: none;border-radius: 0;background: none;font-size: 100%;-webkit-appearance: none;appearance: none;-moz-appearance: none;-ms-appearance: none;-o-appearance: none;-webkit-border-radius: 0;-moz-border-radius: 0;-o-box-sizing: border-box; } 
+    input::-ms-clear {display: none; } 
+    /* /reset */
+    /* font */
+    @font-face {font-family: SamsungOne;src: url(/fonts/SamsungOne-400.woff2) format("woff2"), url(/fonts/SamsungOne-400.woff) format("woff");font-weight: 400;font-style: normal; } 
+    @font-face {font-family: SamsungOne;src: url(/fonts/SamsungOne-700.woff2) format("woff2"), url(/fonts/SamsungOne-700.woff) format("woff");font-weight: 700;font-style: normal; } 
+    @font-face {font-family: SamsungOneKorean;src: url(/fonts/SamsungOneKorean-400.woff2) format("woff2"), url(/fonts/SamsungOneKorean-400.woff) format("woff");font-weight: 400;font-style: normal; } 
+    @font-face {font-family: SamsungOneKorean;src: url(/fonts/SamsungOneKorean-700.woff2) format("woff2"), url(/fonts/SamsungOneKorean-700.woff) format("woff");font-weight: 700;font-style: normal; } 
+    @font-face {font-family: SamsungSharpSans-Bold;src: url(/fonts/SamsungSharpSans-Bold.woff2) format("woff2"), url(/fonts/SamsungSharpSans-Bold.woff) format("woff");font-weight: 400;font-style: normal; } 
+    @font-face {font-family: SamsungSharpSans-Medium;src: url(/fonts/SamsungSharpSans-Medium.woff2) format("woff2"), url(/fonts/SamsungSharpSans-Medium.woff) format("woff");font-weight: 500;font-style: normal; } 
+    /* /font */
+    /* common */
+    .sr-only { position: absolute; top: 0; left: 0; width: 0; height: 0; overflow: hidden; visibility: hidden; font-size: 0; line-height: 0; } 
+    /* /common */
+    
+    /* =========== LAYOUT ========== */
+    .content-box { height: 100%; padding: 40px 24px; } 
+    .content-inner { max-width: 1000px; margin: auto; }
+    /* header */
+    .header-wrap { border-bottom: 1px solid #ebebed; } 
+    .header { position: relative; max-width: 1000px; margin: auto; padding: 44px 20px; } 
+    .header .logo { display: block; font-family: SamsungSharpSans-Bold; font-size: 24px; font-weight: bold; line-height: 1.33; letter-spacing: -0.08px; } 
+    /* /header */ 
+    @media all and (max-width: 1000px){
+     .content-box { padding: 32px 24px 24px; } 
+     .header { padding: 34px 24px; } 
+     .header .logo { font-size: 20px; line-height: 1.6; letter-spacing: -0.06px; } 
+     }
+    
+    /* =========== COMPONENTS ========== */
+    /* window popup */
+    .header { max-width: 1080px; padding: 44px 40px; } 
+    .header .logo { font-size: 24px; font-weight: bold; line-height: 1.33; letter-spacing: -0.08px; } 
+    .container { padding-top: 120px; } 
+    .inner { max-width: 1080px; padding: 40px; } 
+    .attach-wrap { position: relative; display: table; width: 100%; min-height: 160px; padding: 24px; border: 1px dashed rgba(214,214,214,0.5); text-align: center; background-color: rgba(15, 66, 207, 0.03); border-radius: 4px; } 
+.attach-wrap > div { display: table-cell; vertical-align: middle; }
+    .attach-wrap.attached { text-align: left; background-color: #fff; } 
+.attach-wrap.attached > div { vertical-align: top; }
+.attach-wrap.attaching { border: 1px solid #0f42cf; } 
+.attach-wrap.error { border: 1px solid #ec2000; } 
+    .attach-wrap .text { display: block; margin-bottom: 16px; font-size: 16px; line-height: 1.5; color: #363636; } 
+    .attach-wrap .file-btn input[type="file"] { position: absolute; width: 0; height: 0; opacity: 0; cursor: pointer; } 
+    .attach-wrap .file-btn input[type="file"] + label { display: inline-block; padding: 7px 24px; border-radius: 4px; font-size: 14px; font-weight: bold; line-height: normal; color: #363636; cursor: pointer; border: 1px solid rgba(0, 0, 0, 0.2) } 
+    
+    .attach-wrap .attached-item { position: relative; padding: 10px 16px; border: solid 1px #ebebed; background-color: #fff; width: 100%; } 
+    .attach-wrap .attached-item .name { display: block; max-width: 100%; margin-right: 28px; padding: 0 0 0 28px; font-size: 14px; line-height: 1.43; text-overflow: ellipsis; overflow: hidden; max-height: 40px; -webkit-box-orient: vertical; -webkit-line-clamp: 2; display: -webkit-box; color: #0f42cf; background: url(/images/file.png) no-repeat left 2px; background-size: 16px; font-family: Arial; } 
+.attach-wrap .attached-item a:hover {text-decoration: underline;}
+    .attach-wrap .attached-item button { position: absolute; top: 12px; right: 16px; width: 16px; height: 16px; line-height: 0; font-size: 0; } 
+    .attach-wrap .attached-item button img { max-width: 100%; } 
+    
+    .test-bottom { margin-top: 40px; text-align: center; } 
+    .test-bottom .notice { display: block; margin-bottom: 12px; font-size: 16px; line-height: 1.5; color: #9e9e9e; } 
+    /* button */
+    .filled-btn { display: inline-block; width: 200px; padding: 15px 24px; border-radius: 4px; font-size: 16px; font-weight: bold; line-height: normal; text-align: center; color: #fff; background-color: #0f42cf; vertical-align: middle; font-family: SamsungOne; } 
+    .lined-btn { display: inline-block; width: 200px; padding: 15px 24px; border-radius: 4px; border: 1px solid #d6d6d6; font-size: 16px; font-weight: bold; line-height: normal; text-align: center; color: #363636; background-color: #fff; vertical-align: middle; font-family: SamsungOne;} 
+    .filled-btn.big { width: 200px; } 
+    .lined-btn.big { width: 200px; } 
+    .filled-btn:hover:not([disabled]) { background-color: #002ba3; } 
+    .lined-btn:hover:not([disabled]) { background-color: #d6d6d6; } 
+    /* /button */
+    /* input */
+    .input-text { position: relative; padding: 0 12px; border-radius: 4px; border: solid 1px #d6d6d6; background-color: #fff; } 
+    .input-text.big { padding: 0 12px; } 
+    .input-text.search { padding-left: 32px; background: url(/images/input-search.png) no-repeat #fff 8px center / 16px 17px; } 
+    .input-text input[type="text"] { width: 100%; height: 30px; line-height: 20px; font-family: SamsungOne,"Apple SD Gothic Neo","Apple SD 고딕 Neo",AppleGothic,arial,sans-serif; font-size: 14px; color: #363636; } 
+    .input-text input[type="text"] + button { display: none; position: absolute; right: 8px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; padding: 3px; line-height: 0; font-size: 0; } 
+    .input-text input[type="text"] + button img { max-width: 100%; } 
+    .input-text.active input[type="text"] + button { display: block; } 
+    .input-text.active.error input[type="text"] + button { display: none; } 
+    .error-msg { display: none;}
+    .input-text.error + .error-msg { display: block; margin: 8px 0 0 0; font-size: 14px; line-height: 1.43; letter-spacing: normal; color: #ec2000; white-space: nowrap; } 
+    .input-text.active { padding-right: 32px; } 
+    .input-text.big input[type="text"] { height: 46px; font-size: 16px; line-height: 1.38; } 
+    .input-text.active { border-color: #0f42cf; } 
+    .input-text.error { border-color: #ec2000; padding-right: 36px; background: url(/images/error.png) no-repeat #fff calc(100% - 9px) center / 16px; } 
+    .input-text.big.error { padding-right: 48px; background-size: 24px; } 
+    .input-file { position: relative; border-radius: 4px; border: solid 1px #d6d6d6; } 
+    .input-file input[type="file"] { position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0; } 
+    .input-file input[type="file"] + label { display: block; width: 32px; height: 32px; font-size: 0; line-height: 0; background: url(/images/attachment.png) no-repeat center transparent; background-size: 16px; cursor: pointer; } 
+    .textarea { width: 100%; height: 100px; font-size: 14px; line-height: 1.43; letter-spacing: -0.14px; color: #363636; resize: none; scrollbar-width: none; -ms-overflow-style: none; overflow-x: scroll; } 
+    .textarea::-webkit-scrollbar { display: none; } 
+    /* /input */
+    /* filter-wrap */
+    .filter-wrap { margin-top: 40px; } 
+    .filter-box ul { display: flex; margin: 0 -4px; } 
+    .filter-box ul li { position: relative; flex: 1 1 0px; width: 16.66%; padding: 0 4px; } 
+    .filter-item { position: relative; text-align: left; } 
+    .filter-item .title { display: block; margin-bottom: 6px; font-size: 14px; font-weight: bold; line-height: 1.43; letter-spacing: -0.14px; color: #6e6e6e; } 
+    .filter-item .input-text.active + .dropdown-wrap { display: block; } 
+    .filter-item .selected-text { position: relative; display: block; padding: 5px 36px 5px 12px; border-radius: 4px; border: solid 1px #d6d6d6; font-size: 14px; line-height: 1.43; color: #363636; } 
+    .filter-item .selected-text:before { content: ""; position: absolute; top: 50%; right: 12px; transform: translateY(-50%); width: 16px; height: 16px; background: url(/images/arrow-light.png) no-repeat center / cover; } 
+    .filter-item .selected-text.active { border-color: #0f42cf; } 
+    .filter-item .selected-text.active:before { transform: translateY(-50%) rotate(180deg); } 
+    .filter-item .selected-text span { display: block; max-width: 100%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; } 
+    .filter-item .selected-text.active + .dropdown-wrap { display: block; } 
+    .dropdown-wrap { display: none; position: absolute; top: calc(100% + 4px); left: 0; right: 0; background-color: #fff; z-index: 20; } 
+    .tableWrap .innerTable .dropdown-wrap { position: static; margin-top: 4px; } 
+    .dropdown-wrap ul { display: block; margin: 0; padding: 8px 0; border-radius: 4px; border: solid 1px #d6d6d6; } 
+    .dropdown-wrap ul li { flex: none; width: 100%; padding: 0; } 
+    .dropdown-wrap ul li a { display: block; padding: 10px 12px; color: #363636; font-size: 14px; line-height: 1.43; } 
+    .dropdown-wrap ul li.recent a { padding-left: 40px; background: url(/images/icon_time.png) 16px center no-repeat; background-size: 16px; } 
+    .dropdown-wrap ul li:hover a { background-color: rgba(15,66,207,0.1); } 
+    .filter-title { position: relative; display: inline-block; margin-top: 16px; margin-bottom: 6px; font-size: 14px; font-weight: bold; line-height: 1.43; letter-spacing: -0.14px; color: #6e6e6e; }
+    .filter-title:before { content: "*"; position: absolute; top: -5px; right: -10px; font-size: 14px; font-weight: bold; line-height: normal; letter-spacing: -0.14px; color: #ec2000;
+    }
+    .filter-selected { position: relative; margin-top: 6px; padding: 16px 16px 36px; border: solid 1px #d6d6d6; border-radius:4px; } 
+    .filter-selected .textarea { height: 184px; font-size: 14px; letter-spacing: normal; color: #363636; font-size: 14px; line-height: 1.43; } 
+    .download-box { margin-top: 10px; border-radius: 4px; border: solid 1px #d6d6d6; padding: 14px 16px;}
+    .download-box .link { display: inline-block; padding-right: 20px; font-size: 14px; line-height: 1.43; letter-spacing: -0.14px; color: #0f42cf; background: url(/images/install.png) no-repeat right center; background-size: 16px; }
+    .download-box .size {display: inline-block; margin-left: 12px; font-size: 14px; line-height: 1.43; letter-spacing: -0.14px; color: #9e9e9e;}
+    .bottom { margin-top: 40px; text-align: center; } 
+    .reg-item + .bottom { margin-top: 60px; } 
+    .bottom ul { text-align: center; } 
+    .bottom ul li { display: inline-block; padding: 0 8px; } 
+    @media all and (max-width: 1000px){
+     .attach-wrap.only { height: 330px; } 
+     .filter-wrap { margin-top: 24px; } 
+     .filter-box ul { display: block; margin: 0; } 
+     .filter-box > ul > li + li { margin-top: 16px; } 
+     .filter-box ul li { flex: none; width: 100%; padding: 0; } 
+     .filter-selected { margin-top: 8px; } 
+    .filter-title {margin-bottom:0;}
+     .bottom .filled-btn.big { width: 100%; } 
+     .bottom .lined-btn.big { width: 100%; } 
+     .bottom ul { text-align: center; margin: 0 -4px; font-size: 0; line-height: 0; } 
+    .bottom ul li { display: inline-block; width: 50%; padding: 0 4px; } 
+    .bottom ul li button { width: 100%; } 
+     .reg-item + .bottom { margin-top: 40px; } 
+    .input-text.error + .error-msg { white-space: normal; } 
+    
+     .input-text input[type="text"] { height: 38px; }
+.input-text input[type="text"] + button { right: 12px; }
+     .filter-item .selected-text { padding-top: 9px; padding-bottom: 9px; } 
+     }
+    </style>
+</head>
+<body>
+  <div class="wrapper">
+  
+    <!-- header -->
+    <header class="header-wrap">
+      <!-- mobile gnb open 시 .gnb-opened 클래스 추가 -->
+      <div class="header">
+        <span class="logo">Report and Guide</span>
+      </div>
+    </header>
+    <!-- /header -->
+    <!-- content-box -->
+    <div class="content-box">
+      <div class="content-inner">
+        <div class="attach-wrap">
+          <!-- 파일 업로드 시 attached 클래스 추가 -->
+          <div>
+            <span class="text">Drag files to Upload, or</span>
+            <div class="file-btn">
+              <input type="file" name="file" id="file">
+              <label for="file">Choose File</label>
+            </div>
+          </div>
+        </div>
+  
+        <div class="filter-wrap">
+          <!-- filter-box -->
+          <div class="filter-box">
+            <ul>
+              <li>
+                <div class="filter-item">
+                  <span class="title">PLM No.</span>
+                  <div class="input-text error">
+                    <!-- 에러 시 .error 클래스 사용 -->
+                    <input type="text" name="plm" id="plm">
+                    <button type="button"><img src="/images/btn_close.png" alt=""></button>
+                  </div>
+                  <p class="error-msg">Already registered PLM No.(Package Name). Please enter another PLM No.(Package Name).</p>
+                  <div class="dropdown-wrap">
+                    <ul>
+                      <li class="recent"><a href="#;">1</a></li>
+                      <li><a href="#;">2</a></li>
+                      <li><a href="#;">3</a></li>
+                      <li><a href="#;">4</a></li>
+                      <li><a href="#;">5</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="filter-item">
+                  <span class="title">App Version</span>
+                  <div class="input-text">
+                    <input type="text" name="app" id="app">
+                    <button type="button"><img src="/images/btn_close.png" alt=""></button>
+                  </div>
+                  <div class="dropdown-wrap">
+                    <ul>
+                      <li><a href="#;">1</a></li>
+                      <li><a href="#;">2</a></li>
+                      <li><a href="#;">3</a></li>
+                      <li><a href="#;">4</a></li>
+                      <li><a href="#;">5</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="filter-item">
+                  <span class="title">Model Name</span>
+                  <div class="input-text">
+                    <input type="text" name="modelName" id="modelName">
+                    <button type="button"><img src="/images/btn_close.png" alt=""></button>
+                  </div>
+                  <div class="dropdown-wrap">
+                    <ul>
+                      <li><a href="#;">1</a></li>
+                      <li><a href="#;">2</a></li>
+                      <li><a href="#;">3</a></li>
+                      <li><a href="#;">4</a></li>
+                      <li><a href="#;">5</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="filter-item">
+                  <span class="title">Model Version</span>
+                  <div class="input-text">
+                    <input type="text" name="modelVersion" id="modelVersion">
+                    <button type="button"><img src="/images/btn_close.png" alt=""></button>
+                  </div>
+                  <div class="dropdown-wrap">
+                    <ul>
+                      <li><a href="#;">1</a></li>
+                      <li><a href="#;">2</a></li>
+                      <li><a href="#;">3</a></li>
+                      <li><a href="#;">4</a></li>
+                      <li><a href="#;">5</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="filter-item">
+                  <span class="title">OS</span>
+                  <div class="input-text">
+                    <input type="text" name="os" id="os">
+                    <button type="button"><img src="/images/btn_close.png" alt=""></button>
+                  </div>
+                  <div class="dropdown-wrap">
+                    <ul>
+                      <li><a href="#;">1</a></li>
+                      <li><a href="#;">2</a></li>
+                      <li><a href="#;">3</a></li>
+                      <li><a href="#;">4</a></li>
+                      <li><a href="#;">5</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="filter-item">
+                  <span class="title">Symptom</span>
+                  <a href="#;" class="selected-text"><span>Function</span></a>
+                  <!-- 토글 시 .active 클래스 추가 -->
+                  <div class="dropdown-wrap">
+                    <ul>
+                      <li><a href="#;">FC/ANR</a></li>
+                      <li><a href="#;">Touch</a></li>
+                      <li><a href="#;">Sluggish</a></li>
+                      <li><a href="#;">Battery Consumption</a></li>
+                      <li><a href="#;">Function</a></li>
+                      <li><a href="#;">Foldable</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- /filter-box -->
+          <span class="filter-title">Report and Guide</span>
+          <div class="filter-selected">
+            <textarea name="filters" id="filters" class="textarea" placeholder="Please write down your opinion… "></textarea>
+          </div>
+          <!-- <div class="download-box">
+            <a href="#;" class="link" download="">log.zip</a><span class="size">(22MB)</span>
+          </div> -->
+          <div class="bottom">
+            <ul>
+              <li>
+                <button class="lined-btn">Cancel</button>
+              </li>
+              <li>
+                <button class="filled-btn">Create Issue</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /content-box -->
+  
+    </div>
+    <script src="/lib/jquery-3.6.0.min.js"></script>
+    <script src="/lib/jquery-ui.min.js"></script>
+    <script src="/js/common.js"></script>
+</body>
+</html>
