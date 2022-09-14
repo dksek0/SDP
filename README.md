@@ -5,7 +5,7 @@ Samsung Developer Portal
 
 - 기여도 : 100%
 
-- Vue 기반 모바일 기기 원격 테스트 화면 반응형 구축
+- Vue 기반 모바일 기기 원격 테스트 화면, 이슈 버그 리포트 화면 반응형 구축
 
 - JQuery UI를 활용하여 resizable 기능 구현
 
